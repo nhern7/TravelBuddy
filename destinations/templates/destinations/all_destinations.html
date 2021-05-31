@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Destinations</title>
+</head>
+<body>
+   <div>Here you can see ALL the destinations...<br>
+        {% for d in dests %}
+        <!--how you 'embbed' a link in text while its also in a list format-->
+        <li><a href="{% url 'destinations:details' d.name %}">{{d.name}}</a></li>
+        <!--1st arg = url pattern name 2nd arg = arg to be used in the url-->
+        {% endfor %}
+    </div>
+    <div><br>All tour guides currently availible are...<br>
+        {% for g in guides %}
+        {% if g.is_active %}
+        <li>{{g.first_name}} {{g.last_name}}</li>
+        {% endif %}
+        {% endfor %}
+    </div>
+</body>
+</html>
