@@ -74,3 +74,6 @@ errors:
 4-19 - in "models", class destination has no objects member variable
 4-19 - in "acconuts", fails request to GET register.html - SOLUTION: move register.html into static folder, outermost level
 4-19 - in "static", fails request to GET contact.html 
+
+scheduler idea:
+https://alexpnt.github.io/2017/07/15/django-calendar/
