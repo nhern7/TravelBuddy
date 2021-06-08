@@ -2,7 +2,7 @@ This Django project was done to learn the framework and, afterwards, experiment 
 
 
 resources:
-Telusko on youtube
+"Telusko" on youtube
 https://www.enterprisedb.com/postgres-tutorials/how-use-postgresql-django
 
 glossary:
@@ -18,6 +18,12 @@ directory_layout:
 FirstApp/
     accounts/
         migrations/
+	    __init__.py
+	templates/
+	    accounts/
+	        login.html
+		logout.html
+		register.html
 	__init__.py
 	admin.py
 	apps.py
@@ -27,12 +33,28 @@ FirstApp/
 	views.py
     assets/
 	admin/
+	    ...
+	bootstrap/
+	    ...
 	images/
+	    ...
+	jquery/
+	    ...
+	jquery-ui/
+	    ...
 	js/
+	    ...
 	plugins/
+	    ...
 	styles/
-    calc/
-	migrations/
+	    ...
+    destinations/
+        migrations/
+	    __init__.py
+	templates/
+	    destinations/
+	         all_destinations.html
+		 details.html
 	__init__.py
 	admin.py
 	apps.py
@@ -46,21 +68,37 @@ FirstApp/
         urls.py
         asgi.py
         wsgi.py
+    Lib/
+        site-packages/
+	    ...
     media/
 	pics/
+	    ...
     static/
-	images/
-	js/
-	plugins/
-	styles/
-    templates/
-	base.html
-	home.html
-	index.html
-	register.html
-	result.html
+        FirstApp/
+	    images/
+	        ...
+	    js/
+	        ...
+	    plugins/
+	        ...
+	    styles/
+	        ...
     travello/
 	migrations/
+	    __init__.py
+	    0001_initial.py
+	    0002_auto_20200526_1451.py
+	    0003_guide.py
+	    0004_auto_20210530_0432.py
+	    0005_auto_20210530_1532.py
+	    0006_auto_20210530_1918.py
+	    0007_remove_destination_end_time.py
+	    0008_auto_20210530_1928.py
+	    0009_auto_20210530_1937.py
+	templates/
+	    travello/
+	        index.html
 	__init__.py
 	admin.py
 	apps.py
@@ -73,5 +111,5 @@ FirstApp/
 
 errors:
 
-scheduler idea:
+scheduler idea (come back to this):
 https://alexpnt.github.io/2017/07/15/django-calendar/
