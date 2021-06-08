@@ -1,6 +1,3 @@
-This Django project was done to learn the framework and, afterwards, experiment with different functionalities/advanced techniques. 
-
-
 resources:
 "Telusko" on youtube
 https://www.enterprisedb.com/postgres-tutorials/how-use-postgresql-django
