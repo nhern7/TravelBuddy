@@ -1,4 +1,5 @@
-IMPORTANT NOTE: change interpreter in vscode by: "select interpreter" > copy "C:\Users\hernan\projects\FirstApp" (path of the virtual environment, with pyvenv.cfg file) > enter
+This Django project was done to learn the framework and, afterwards, experiment with different functionalities/advanced techniques. 
+
 
 resources:
 Telusko on youtube
@@ -71,9 +72,6 @@ FirstApp/
     README.txt
 
 errors:
-4-19 - in "models", class destination has no objects member variable
-4-19 - in "acconuts", fails request to GET register.html - SOLUTION: move register.html into static folder, outermost level
-4-19 - in "static", fails request to GET contact.html 
 
 scheduler idea:
 https://alexpnt.github.io/2017/07/15/django-calendar/
