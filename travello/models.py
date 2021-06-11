@@ -55,3 +55,16 @@ class Destination(models.Model): #the stuff in the () tells django to convert th
     def __str__(self):
         return self.name
     
+#do pip install bing-image-downloader
+from bing_image_downloader import downloader
+def image_scraping():
+    dir = "C:\\Users\\hernan\\projects\\FirstApp\\media\\pics" #customize the directory where you want images to be saved
+    dests = Destination.objects.all()
+    for d in dests:
+        query_string = "city" #the search query you want to use
+        image_collection = dict()
+        downloader.download(query_string, limit=1,  output_dir=dir, adult_filter_off=True, force_replace=False, timeout=60, verbose=False)
+        d.img = "pics/"+query_string+"/Image_1.jpg"  #will probably have to change the first string part depending on the direcotry path being used
+        d.save()
+
+image_scraping()
