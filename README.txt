@@ -1,17 +1,4 @@
-resources:
-"Telusko" on youtube
-https://www.enterprisedb.com/postgres-tutorials/how-use-postgresql-django
-
-glossary:
-"app" a web application that does something. can be used within multiple projects
-"project" is a collection of settings for an instance of Django, including: 
-database configuration, Django-specific options, and application-specific settings. can contain mulitple apps
-"travello" is the name of our fake website that we are learning with. is an app
-"FirstApp" is the name of our django project that we are learning with
-"view" is a 'type' of Web page in an app that generally serves a specific function and has a specific template
-"asset" css or js or image that we want an app to serve
-
-directory_layout:
+File Structrue:
 FirstApp/
     accounts/
         migrations/
@@ -106,7 +93,14 @@ FirstApp/
     manage.py
     README.txt
 
-errors:
+Resources:
+   - "Telusko" on youtube
+   - https://www.enterprisedb.com/postgres-tutorials/how-use-postgresql-django
 
-scheduler idea (come back to this):
-https://alexpnt.github.io/2017/07/15/django-calendar/
+Glossary:
+"project" - a collection of settings for an instance of Django, including: database configuration, Django-specific options, and application-specific settings. can contain mulitple apps
+"view" - a 'type' of Web page in an app that generally serves a specific function and has a specific template
+"asset" - css image to serve
+
+Future Ideas:
+   - https://alexpnt.github.io/2017/07/15/django-calendar/
